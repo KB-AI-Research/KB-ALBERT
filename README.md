@@ -93,7 +93,7 @@
 ### 2. Source Download and Install
 
 - git clone
-- cd KB-AlBert
+- cd KB-ALBERT-KO
 - pip install transformers
 
 
