@@ -105,17 +105,16 @@
 ```python
 import torch
 from noun_splitter import NounSplitter
-from transformers import *
-from transformers import AlBertTokenizer, AlBertModel
+from transformers import AlbertTokenizer, AlbertModel
 
 # Load noun-splitter 
 noun_splitter = NounSplitter("src/preprocessing/model/np2.crfsuite")
 
 # Load pre-trained model tokenizer (vocabulary)
-tokenizer = AlBertTokenizer.from_pretrained('model-path')
+tokenizer = AlbertTokenizer.from_pretrained('model-path')
 
 # Load pre-trained model
-kb_albert = AlBertModel.from_pretrained('model-path')
+kb_albert = AlbertModel.from_pretrained('model-path')
 
 # Tokenize inputs
 text = "나는 국민은행에서 오픈한 알버트를 쓴다."
