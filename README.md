@@ -92,9 +92,9 @@
 
 ### 2. Source Download and Install
 
-git clone 
-cd KB-AlBert
-pip install transformers
+- git clone
+- cd KB-AlBert
+- pip install transformers
 
 
 ### 3. Using with PyTorch and Transformer(from Hugging Face) 
