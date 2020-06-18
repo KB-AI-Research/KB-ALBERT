@@ -94,6 +94,7 @@
 
 - git clone
 - cd KB-ALBERT-KO
+- pip install python-crfsuite
 - pip install transformers
 
 
@@ -108,13 +109,13 @@ from transformers import *
 from transformers import AlBertTokenizer, AlBertModel
 
 # Load noun-splitter 
-noun_splitter = NounSplitter("np2.crfsuite")
+noun_splitter = NounSplitter("src/preprocessing/model/np2.crfsuite")
 
 # Load pre-trained model tokenizer (vocabulary)
-tokenizer = AlBertTokenizer.from_pretrained('KB-AlBERT')
+tokenizer = AlBertTokenizer.from_pretrained('model-path')
 
 # Load pre-trained model
-kb_albert = AlBertModel.from_pretrained('KB-AlBERT')
+kb_albert = AlBertModel.from_pretrained('model-path')
 
 # Tokenize inputs
 text = "나는 국민은행에서 오픈한 알버트를 쓴다."
