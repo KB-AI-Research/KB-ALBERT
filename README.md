@@ -41,8 +41,8 @@
 # 모델 특징
 
 ### 1. 금융 도메인의 다양한 용어 및 수치값 등을 잘 표현하기 위해 고민 : 두 가지 형태의 모델을 제공
-- SubToken-based : 금융 도메인의 전문 용어들이 vocab에서 버려지지 않도록 vocab size 를 보통 일반적으로 사용하는 32,000개 정도 보다 큰 50,000개 정도로 사용
-- Char-based : vocab 자체의 디펜던시를 없애기 위해서 char-level 모델 또한 추가로 학습하고 활용
+- [SubToken-based](https://github.com/KB-Bank-AI/KB-ALBERT-KO/tree/master/kb-albert-subtoken) : 금융 도메인의 전문 용어들이 vocab에서 버려지지 않도록 vocab size 를 보통 일반적으로 사용하는 32,000개 정도 보다 큰 50,000개 정도로 사용
+- [Char-based](https://github.com/KB-Bank-AI/KB-ALBERT-KO/tree/master/kb-albert-char) : vocab 자체의 디펜던시를 없애기 위해서 char-level 모델 또한 추가로 학습하고 활용
 
 ### 2. 금융 도메인에 특화 되었지만, 일반 도메인에 대해서도 잘 동작
 - 금융 도메인과 관련된 문서를 추가적으로 많이 학습 하였고, 해당 도메인으로만 치우치지 않도록 일반 도메인의 학습 데이터도 많은 양을 사용.
