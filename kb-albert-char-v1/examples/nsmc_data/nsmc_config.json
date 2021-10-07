@@ -1,0 +1,13 @@
+{
+  "data_dir": "./nsmc_data",
+  "model_name_or_path": "../kb-albert-char-base-v1",
+  "output_dir": "./nsmc_outputs",
+  "max_seq_length": 128,
+  "num_train_epochs": 3,
+  "per_device_train_batch_size": 16,
+  "gradient_accumulation_steps": 1,
+  "save_steps": 500,
+  "seed": 23,
+  "do_train": true,
+  "do_eval": true
+}
